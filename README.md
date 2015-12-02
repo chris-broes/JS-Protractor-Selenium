@@ -8,9 +8,9 @@
 ```
 	npm install
 ```
-If using a proxy, insert the port number on line 4 of conf.js and uncomment line 9.
+If using a proxy, insert the proxy information on line 4 of conf.js and uncomment line 9.
 
 # Running tests
 ```
-	./node_modules/.bin/protractor conf.js
+	gulp
 ```
