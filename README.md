@@ -6,6 +6,7 @@
 
 # Setup
 ```
+	npm install gulp -g
 	npm install
 ```
 If using a proxy, insert the proxy information on line 4 of conf.js and uncomment line 9.
