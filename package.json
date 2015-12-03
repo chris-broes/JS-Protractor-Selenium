@@ -4,6 +4,11 @@
   "description": "Parallel tests protractor  =============",
   "main": "",
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-shell": "^0.5.1",
     "protractor": "2.1.0"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^1.0.0"
   }
 }
