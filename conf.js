@@ -38,3 +38,16 @@ exports.config = {
     printSessionId("Insert Job Name Here");
   }
 }
+
+if (process.env.SAUCE_ONDEMAND_BROWSERS) {
+  exports.config.multiCapabilities = JSON.parse(process.env.SAUCE_ONDEMAND_BROWSERS).map(function(browser) {
+    return {
+      browserName: browser.browser,
+      version: browser['browser-version'],
+      platform: browser.platform,
+      name: browser['long-name'],
+      shardTestFiles: true,
+      maxInstances: 25
+    }
+  });
+}
